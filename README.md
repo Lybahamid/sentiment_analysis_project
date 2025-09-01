@@ -93,10 +93,10 @@ python scripts/infer.py
 The script loads the saved models and predicts sentiments using both Logistic Regression (Word2Vec) and LSTM (BERT). Example output:
 Sentiment Predictions:
 
-Text                                        | Logistic Regression  | LSTM (BERT)
-I love this product, it's amazing!          | positive             | positive
-This is the worst experience ever.          | negative             | negative
-The weather is okay today.                  | neutral              | neutral
+Text                                                | Logistic Regression  | LSTM (BERT)
+I love this product, it's amazing!                  | positive             | positive
+This is the worst experience ever.                  | negative             | negative
+The weather is okay today.                          | neutral              | neutral
 
 The LSTM model is recommended for inference due to its superior accuracy (~74.5%).
 Visualizations
