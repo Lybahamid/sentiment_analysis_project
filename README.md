@@ -1,5 +1,6 @@
 ## Sentiment Analysis on Social Media Data
 Overview
+
 This project implements a sentiment analysis system to classify tweets as Positive, Negative, or Neutral using advanced Natural Language Processing (NLP) techniques. It compares Word2Vec and BERT (DistilBERT) embeddings, trains Logistic Regression and LSTM models, visualizes sentiment trends, and provides an inference script for predicting sentiments on new text. The project fulfills the requirements of preprocessing large-scale text data, experimenting with embeddings, training machine learning models, and visualizing results.
 
 Objective
@@ -91,11 +92,11 @@ python scripts/infer.py
 
 The script loads the saved models and predicts sentiments using both Logistic Regression (Word2Vec) and LSTM (BERT). Example output:
 Sentiment Predictions:
-Text                                               | Logistic Regression   | LSTM (BERT)
---------------------------------------------------
-I love this product, it's amazing!                 | positive             | positive
-This is the worst experience ever.                 | negative             | negative
-The weather is okay today.                         | neutral              | neutral
+
+Text                                        | Logistic Regression  | LSTM (BERT)
+I love this product, it's amazing!          | positive             | positive
+This is the worst experience ever.          | negative             | negative
+The weather is okay today.                  | neutral              | neutral
 
 The LSTM model is recommended for inference due to its superior accuracy (~74.5%).
 Visualizations
@@ -108,28 +109,9 @@ Negative Word Cloud: Frequent words in negative tweets.
 ![Positive Word Cloud](outputs/wordcloud_positive.png)
 ![Negative Word Cloud](outputs/wordcloud_negative.png)
 
-Project Structure
-sentiment_analysis_project/
-├── data/
-│   ├── training.1600000.processed.noemoticon.csv
-│   └── processed_data.csv
-├── scripts/
-│   ├── preprocess.py
-│   ├── train.py
-│   ├── visualize.py
-│   └── infer.py
-├── models/
-│   ├── logistic_regression_w2v.pkl
-│   ├── word2vec.model
-│   └── lstm_bert.h5
-├── outputs/
-│   ├── sentiment_distribution.png
-│   ├── wordcloud_positive.png
-│   └── wordcloud_negative.png
-├── .gitignore
-├── README.md
 
-Notes
+
+Notes:
 
 Use a GPU for faster BERT processing if available.
 Adjust sample_size in preprocess.py to use more data for better model performance.
