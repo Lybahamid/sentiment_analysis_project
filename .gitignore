@@ -1,0 +1,23 @@
+# Ignore large dataset files
+data/training.1600000.processed.noemoticon.csv
+
+# Ignore Python cache and temporary files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environment directories
+.venv/
+lfw_env/
+
+# Ignore large model files (optional, uncomment if needed)
+# models/lstm_bert.h5
+
+# Ignore system and editor files
+.DS_Store
+.vscode/
+*.log
+
+# Ignore processed data (optional, as it can be regenerated)
+# data/processed_data.csv
